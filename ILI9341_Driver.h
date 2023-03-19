@@ -73,9 +73,9 @@ void STM_HAL_SPI_Init(void);
 #define ILI9341_SCREEN_WIDTH 	320
 
 // 显示方向
-#define SCREEN_VERTICAL_1 		0
+#define SCREEN_VERTICAL_1 	0
 #define SCREEN_HORIZONTAL_1 	1
-#define SCREEN_VERTICAL_2 		2
+#define SCREEN_VERTICAL_2 	2
 #define SCREEN_HORIZONTAL_2 	3
 
 /* 8.1. Command List （指令列表）
@@ -84,52 +84,52 @@ void STM_HAL_SPI_Init(void);
  */
 #define CMD_NO_OPERATION                        0x00
 #define CMD_SOFTWARE_RESET                      0x01
-#define CMD_READ_DIS_IDENT_INFO 				0x04
-#define CMD_READ_DIS_STATUS 					0x09
-#define CMD_READ_DIS_POWER_MODE 				0x0a
-#define CMD_READ_DIS_MADCTL 					0x0b
-#define CMD_READ_DIS_PIXEL_FORMAT 				0x0c
-#define CMD_READ_DIS_IMG_FORMAT 				0x0d
-#define CMD_READ_DIS_SIG_MODE 					0x0e
+#define CMD_READ_DIS_IDENT_INFO 		0x04
+#define CMD_READ_DIS_STATUS 			0x09
+#define CMD_READ_DIS_POWER_MODE 		0x0a
+#define CMD_READ_DIS_MADCTL 			0x0b
+#define CMD_READ_DIS_PIXEL_FORMAT 		0x0c
+#define CMD_READ_DIS_IMG_FORMAT 		0x0d
+#define CMD_READ_DIS_SIG_MODE 			0x0e
 #define CMD_READ_DIS_SELF_DIAGNOSTIC_RESULT     0x0f
-#define CMD_ENTER_SLEEP_MODE 					0x10
+#define CMD_ENTER_SLEEP_MODE 			0x10
 #define CMD_SLEEP_OUT                           0x11
-#define CMD_PARTIAL_MODE_ON 					0x12
-#define CMD_NORMAL_DIS_MODE_ON 					0x13
-#define CMD_DIS_INVERSION_OFF 					0x20
-#define CMD_DIS_INVERSION_ON 					0x21
-#define CMD_GAMMA_SET 							0x26
-#define CMD_DISPLAY_OFF 						0x28
-#define CMD_DISPLAY_ON 							0x29
-#define CMD_COL_ADDR_SET 						0x2a
-#define CMD_PAGE_ADDR_SET 						0x2b
-#define CMD_MEMORRY_WRITE 						0x2c
-#define CMD_COLOR_SET 							0x2d
-#define CMD_MEMORRY_READ						0x2e
-#define CMD_PARTIAL_AREA 						0x30
-#define CMD_VERTICAL_SCROLLING_DEF 				0x33
-#define CMD_TEARING_EFFECT_LINE_OFF 			0x34
-#define CMD_TEARING_EFFECT_LINE_ON 				0x35
-#define CMD_MEMORY_ACCESS_CTRL 					0x36
-#define CMD_VERTICAL_SCROLLING_START_ADDR 		0x37
-#define CMD_IDLE_MODE_OFF 						0x38
-#define CMD_INLE_MODE_ON 						0x39
-#define CMD_COLMOD_PIXEL_FORMAT_SET 			0x3a
-#define CMD_WRITE_MEMORY_CONTINUE 				0x3c
-#define CMD_READ_MEMORY_CONTINUE 				0x3e
-#define CMD_SET_TEAR_SCANLINE 					0x44
-#define CMD_GET_SCANLINE 						0x45
-#define CMD_WRITE_DIS_BRIGHTNESS 				0x51
-#define CMD_READ_DIS_BRIGHTNESS 				0x52
-#define CMD_WRITE_CTRL_DISPLAY 					0x53
-#define CMD_READ_CTRL_DISPLAY 					0x54
+#define CMD_PARTIAL_MODE_ON 			0x12
+#define CMD_NORMAL_DIS_MODE_ON 			0x13
+#define CMD_DIS_INVERSION_OFF 			0x20
+#define CMD_DIS_INVERSION_ON 			0x21
+#define CMD_GAMMA_SET 				0x26
+#define CMD_DISPLAY_OFF 			0x28
+#define CMD_DISPLAY_ON 				0x29
+#define CMD_COL_ADDR_SET 			0x2a
+#define CMD_PAGE_ADDR_SET 			0x2b
+#define CMD_MEMORRY_WRITE 			0x2c
+#define CMD_COLOR_SET 				0x2d
+#define CMD_MEMORRY_READ			0x2e
+#define CMD_PARTIAL_AREA 			0x30
+#define CMD_VERTICAL_SCROLLING_DEF 		0x33
+#define CMD_TEARING_EFFECT_LINE_OFF 		0x34
+#define CMD_TEARING_EFFECT_LINE_ON 		0x35
+#define CMD_MEMORY_ACCESS_CTRL 			0x36
+#define CMD_VERTICAL_SCROLLING_START_ADDR 	0x37
+#define CMD_IDLE_MODE_OFF 			0x38
+#define CMD_INLE_MODE_ON 			0x39
+#define CMD_COLMOD_PIXEL_FORMAT_SET 		0x3a
+#define CMD_WRITE_MEMORY_CONTINUE 		0x3c
+#define CMD_READ_MEMORY_CONTINUE 		0x3e
+#define CMD_SET_TEAR_SCANLINE 			0x44
+#define CMD_GET_SCANLINE 			0x45
+#define CMD_WRITE_DIS_BRIGHTNESS 		0x51
+#define CMD_READ_DIS_BRIGHTNESS 		0x52
+#define CMD_WRITE_CTRL_DISPLAY 			0x53
+#define CMD_READ_CTRL_DISPLAY 			0x54
 #define CMD_WRITE_CONTENT_ADAPTIVE_BRIGHT_CTRL 	0x55
 #define CMD_READ_CONTENT_ADAPTIVE_BRIGHT_CTRL 	0x56
-#define CMD_WRITE_CABC_MIM_BRIGHT 				0x5e
-#define CMD_READ_CABC_MIM_BRIGHT 				0x5f
-#define CMD_READ_ID1 							0xda
-#define CMD_READ_ID2 							0xdb
-#define CMD_READ_ID3 							0xdc
+#define CMD_WRITE_CABC_MIM_BRIGHT 		0x5e
+#define CMD_READ_CABC_MIM_BRIGHT 		0x5f
+#define CMD_READ_ID1 				0xda
+#define CMD_READ_ID2 				0xdb
+#define CMD_READ_ID3 				0xdc
 
 /* Extended Command Set （扩展指令集）*/
 
