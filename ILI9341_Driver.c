@@ -56,16 +56,16 @@ void ILI9341_Set_Address(uint16_t X1, uint16_t Y1, uint16_t X2, uint16_t Y2)
 	// 设置列地址范围
 	ILI9341_Write_Command(CMD_COL_ADDR_SET);
 	ILI9341_Write_Data(X1 >> 8);		// 写入高八位
-	ILI9341_Write_Data(X1);				// 写入低八位
+	ILI9341_Write_Data(X1);			// 写入低八位
 	ILI9341_Write_Data(X2 >> 8);		// 写入高八位
-	ILI9341_Write_Data(X2);				// 写入低八位
+	ILI9341_Write_Data(X2);			// 写入低八位
 
 	// 设置页地址范围
 	ILI9341_Write_Command(CMD_PAGE_ADDR_SET);
 	ILI9341_Write_Data(Y1 >> 8);		// 写入高八位
-	ILI9341_Write_Data(Y1);				// 写入低八位
+	ILI9341_Write_Data(Y1);			// 写入低八位
 	ILI9341_Write_Data(Y2 >> 8);		// 写入高八位
-	ILI9341_Write_Data(Y2);				// 写入低八位
+	ILI9341_Write_Data(Y2);			// 写入低八位
 	
 	// 准备向内存中写入信息
 	ILI9341_Write_Command(CMD_MEMORRY_WRITE);
@@ -158,19 +158,19 @@ void ILI9341_Set_Rotation(uint8_t Rotation)
  */
 void ILI9341_Init()
 {
-	ILI9341_SPI_Init();											// 初始化 MCU 控制引脚
-	ILI9341_RST_HIGH();											// 硬件复位 ILI9341
+	ILI9341_SPI_Init();							// 初始化 MCU 控制引脚
+	ILI9341_RST_HIGH();							// 硬件复位 ILI9341
 
-	ILI9341_Write_Command(CMD_SOFTWARE_RESET);					// 软件复位 ILI9341
+	ILI9341_Write_Command(CMD_SOFTWARE_RESET);				// 软件复位 ILI9341
 	ILI9341_Delay(1000);
 
 	ILI9341_Write_Command(CMD_COLMOD_PIXEL_FORMAT_SET);			// 配置颜色信息
-	ILI9341_Write_Data(0x55);									// RGB565
+	ILI9341_Write_Data(0x55);						// RGB565
 
-	ILI9341_Write_Command(CMD_SLEEP_OUT);						// 关闭休眠模式
+	ILI9341_Write_Command(CMD_SLEEP_OUT);					// 关闭休眠模式
 	ILI9341_Delay(120);
 
-	ILI9341_Write_Command(CMD_DISPLAY_ON);						// 开启显示
+	ILI9341_Write_Command(CMD_DISPLAY_ON);					// 开启显示
 
-	ILI9341_Set_Rotation(SCREEN_VERTICAL_1);					// 设置显示方向
+	ILI9341_Set_Rotation(SCREEN_VERTICAL_1);				// 设置显示方向
 }
