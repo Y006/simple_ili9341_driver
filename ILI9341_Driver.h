@@ -82,8 +82,8 @@ void STM_HAL_SPI_Init(void);
  * https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf
  * Regulative Command Set （常规指令集）
  */
-#define CMD_NO_OPERATION 						0x00
-#define CMD_SOFTWARE_RESET 						0x01
+#define CMD_NO_OPERATION                        0x00
+#define CMD_SOFTWARE_RESET                      0x01
 #define CMD_READ_DIS_IDENT_INFO 				0x04
 #define CMD_READ_DIS_STATUS 					0x09
 #define CMD_READ_DIS_POWER_MODE 				0x0a
@@ -91,9 +91,9 @@ void STM_HAL_SPI_Init(void);
 #define CMD_READ_DIS_PIXEL_FORMAT 				0x0c
 #define CMD_READ_DIS_IMG_FORMAT 				0x0d
 #define CMD_READ_DIS_SIG_MODE 					0x0e
-#define CMD_READ_DIS_SELF_DIAGNOSTIC_RESULT 	0x0f
+#define CMD_READ_DIS_SELF_DIAGNOSTIC_RESULT     0x0f
 #define CMD_ENTER_SLEEP_MODE 					0x10
-#define CMD_SLEEP_OUT 							0x11
+#define CMD_SLEEP_OUT                           0x11
 #define CMD_PARTIAL_MODE_ON 					0x12
 #define CMD_NORMAL_DIS_MODE_ON 					0x13
 #define CMD_DIS_INVERSION_OFF 					0x20

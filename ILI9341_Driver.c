@@ -158,8 +158,8 @@ void ILI9341_Set_Rotation(uint8_t Rotation)
  */
 void ILI9341_Init()
 {
-	ILI9341_SPI_Init();			                    			// 初始化 MCU 控制引脚
-	ILI9341_RST_HIGH();                                         // 硬件复位 ILI9341
+	ILI9341_SPI_Init();											// 初始化 MCU 控制引脚
+	ILI9341_RST_HIGH();											// 硬件复位 ILI9341
 
 	ILI9341_Write_Command(CMD_SOFTWARE_RESET);					// 软件复位 ILI9341
 	ILI9341_Delay(1000);
