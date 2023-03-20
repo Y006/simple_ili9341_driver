@@ -9,9 +9,9 @@ volatile uint16_t LCD_WIDTH = ILI9341_SCREEN_WIDTH;
  */
 void STM_HAL_SPI_Init()
 {
-	MX_SPI1_Init();						// 硬件 SPI 初始化
-	MX_GPIO_Init();						// IO 初始化
-	ILI9341_CS_LOW(); 					// 复位 CS 引脚
+	MX_SPI1_Init();			// 硬件 SPI 初始化
+	MX_GPIO_Init();			// IO 初始化
+	ILI9341_CS_LOW(); 		// 复位 CS 引脚
 }
 #endif
 
