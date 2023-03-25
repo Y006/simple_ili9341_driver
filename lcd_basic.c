@@ -32,6 +32,8 @@ void LCD_Display_Char(uint16_t x, uint16_t y, uint8_t character, uint16_t fontCo
             // 如果当前像素位为1，则在该位置绘制一个点
             if(pixelData & (0x01<<column))
                 ILI9341_Draw_Pixel(x, y, fontColor);
+            else  // 如果像素位为0，则在该位置绘制背景颜色
+                ILI9341_Draw_Pixel(x, y, WHITE);
             x++;
             // 如果该行中的8个像素全部绘制完毕，则将绘制位置重置为该行起始位置，并开始下一行的绘制
             if((x - startX) == 8)
